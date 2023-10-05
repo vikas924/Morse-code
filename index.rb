@@ -26,7 +26,6 @@ puts decode_word('-- -.--')
 
 def decode_message(param)
   words = param.split('   ')
-  print words
   decoded_words = words.map do |word|
     characters = word.split
     decoded_characters = characters.map { |char| MORSE_CODE[char] || '?' }
